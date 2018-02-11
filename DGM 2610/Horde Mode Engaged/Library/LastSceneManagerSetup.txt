@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Particle Testing.unity
-  isLoaded: 1
-  isActive: 1
