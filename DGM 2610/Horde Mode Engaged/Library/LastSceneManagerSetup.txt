@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Attack tests.unity
+  isLoaded: 1
+  isActive: 1
