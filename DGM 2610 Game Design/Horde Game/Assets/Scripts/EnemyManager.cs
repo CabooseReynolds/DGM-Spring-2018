@@ -53,23 +53,16 @@ namespace Complete
 
             // Set the player numbers to be consistent across the scripts.
 //            m_Movement.m_PlayerNumber = m_PlayerNumber;
-
-            // Create a string using the correct color that says 'PLAYER 1' etc based on the Enemy's color and the player's number.
             m_ColoredPlayerText = "<color=#" + ColorUtility.ToHtmlStringRGB(m_PlayerColor) + ">PLAYER " + m_PlayerNumber + "</color>";
 
-            // Get all of the renderers of the Enemy.
             MeshRenderer[] renderers = m_Instance.GetComponentsInChildren<MeshRenderer> ();
 
-            // Go through all the renderers...
             for (int i = 0; i < renderers.Length; i++)
             {
-                // ... set their material color to the color specific to this Enemy.
                 renderers[i].material.color = m_PlayerColor;
             }
         }
 
-
-        // Used during the phases of the game where the player shouldn't be able to control their Enemy.
         public void DisableControl ()
         {
 			if (m_Movement != null)
@@ -80,9 +73,6 @@ namespace Complete
 
             m_CanvasGameObject.SetActive (false);
         }
-
-
-        // Used during the phases of the game where the player should be able to control their Enemy.
         public void EnableControl ()
         {
 			if (m_Movement != null)
@@ -93,9 +83,6 @@ namespace Complete
 
             m_CanvasGameObject.SetActive (true);
         }
-
-
-        // Used at the start of each round to put the Enemy into it's default state.
         public void Reset ()
         {
             m_Instance.transform.position = m_SpawnPoint.position;
