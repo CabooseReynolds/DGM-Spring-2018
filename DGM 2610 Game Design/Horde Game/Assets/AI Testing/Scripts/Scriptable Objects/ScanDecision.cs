@@ -7,8 +7,8 @@ public class ScanDecision : ABS_Decision
 {
     public override bool Decide (StateController controller)
     {
-        bool noEnemyInSight = Scan (controller);
-        return noEnemyInSight;
+        bool noPlayerInSight = Scan (controller);
+        return noPlayerInSight;
     }
 
     private bool Scan(StateController controller)

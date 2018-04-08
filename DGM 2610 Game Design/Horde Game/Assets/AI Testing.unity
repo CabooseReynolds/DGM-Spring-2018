@@ -263,7 +263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_EnemyPrefabs:
   - {fileID: 1707937007355412, guid: e3da9ae0f38c65544ab0f6245888cbef, type: 2}
-  - {fileID: 1707937007355412, guid: e3da9ae0f38c65544ab0f6245888cbef, type: 2}
+  - {fileID: 1081662346276054, guid: 0b9b483fd4b24774ea1fe77b42fbb60b, type: 2}
   m_Enemy:
   - m_PlayerColor: {r: 1, g: 0, b: 0, a: 0}
     m_SpawnPoint: {fileID: 1373128693}
@@ -386,7 +386,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 593319072}
   m_LocalRotation: {x: -0, y: 0.70718765, z: -0, w: 0.707026}
-  m_LocalPosition: {x: 6.1, y: 0, z: 14.6}
+  m_LocalPosition: {x: 7.7, y: 0, z: 14.6}
   m_LocalScale: {x: 6.478713, y: 6.4787107, z: 40.15812}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1033,8 +1033,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1984995143}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.3, y: 2.3, z: -42.7}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalPosition: {x: 17.3, y: 88.8, z: -42.7}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
@@ -1117,7 +1117,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2014596400}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 18.8}
   m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children: []
   m_Father: {fileID: 0}

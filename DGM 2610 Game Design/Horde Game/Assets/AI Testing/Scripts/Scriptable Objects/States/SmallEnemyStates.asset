@@ -14,9 +14,9 @@ MonoBehaviour:
   moveSpeed: 1
   lookRange: 40
   lookSphereCastRadius: 1
-  attackRange: 1
-  attackRate: 1
-  attackForce: 15
-  attackDamage: 50
+  attackRange: 0
+  attackRate: 0
+  attackForce: 0
+  attackDamage: 0
   searchDuration: 4
   searchingTurnSpeed: 120
