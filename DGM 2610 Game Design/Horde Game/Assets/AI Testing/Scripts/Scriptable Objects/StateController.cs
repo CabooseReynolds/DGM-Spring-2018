@@ -9,6 +9,8 @@ public class StateController : MonoBehaviour {
     public SO_State currentState; //Current state the enemy is in
     public enemyStats enemyStats;
     public Transform eyes;
+    public Transform eyes2;
+    public Transform eyes3;
     public SO_State remainState; //Allows you to see the transition occur between states
 
 
@@ -54,6 +56,16 @@ public class StateController : MonoBehaviour {
         {
             Gizmos.color = currentState.sceneGizmoColor;
             Gizmos.DrawWireSphere (eyes.position, enemyStats.lookSphereCastRadius);
+        }
+        if (currentState != null && eyes2 != null) 
+        {
+            Gizmos.color = currentState.sceneGizmoColor;
+            Gizmos.DrawWireSphere (eyes2.position, enemyStats.lookSphereCastRadius);
+        }
+        if (currentState != null && eyes3 != null) 
+        {
+            Gizmos.color = currentState.sceneGizmoColor;
+            Gizmos.DrawWireSphere (eyes3.position, enemyStats.lookSphereCastRadius);
         }
     }
     public void TransitionToState(SO_State nextState)
