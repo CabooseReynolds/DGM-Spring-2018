@@ -9,12 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68cead96e41033c4689cd2a77ea1b85a, type: 3}
-  m_Name: Patrol Scanner
+  m_Name: BPatrol
   m_EditorClassIdentifier: 
   actions:
   - {fileID: 11400000, guid: 1c3ba4a5206836a43aa4f4578341eb01, type: 2}
-  transitions:
-  - decision: {fileID: 11400000, guid: 61ef44997881d6e439da587717246c92, type: 2}
-    trueState: {fileID: 11400000, guid: 4e0090fa78acf8f4984f45ced1470988, type: 2}
-    falseState: {fileID: 11400000, guid: 314db71d9b9dd8f4c87561f696641537, type: 2}
-  sceneGizmoColor: {r: 0, g: 1, b: 0.21379328, a: 1}
+  transitions: []
+  sceneGizmoColor: {r: 0.2827586, g: 1, b: 0, a: 1}

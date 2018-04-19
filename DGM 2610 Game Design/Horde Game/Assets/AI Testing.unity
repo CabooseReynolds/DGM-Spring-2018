@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -262,16 +262,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EnemyPrefabs:
-  - {fileID: 1707937007355412, guid: e3da9ae0f38c65544ab0f6245888cbef, type: 2}
   - {fileID: 1081662346276054, guid: 0b9b483fd4b24774ea1fe77b42fbb60b, type: 2}
+  - {fileID: 1707937007355412, guid: e3da9ae0f38c65544ab0f6245888cbef, type: 2}
   m_Enemy:
   - m_PlayerColor: {r: 1, g: 0, b: 0, a: 0}
-    m_SpawnPoint: {fileID: 1373128693}
+    m_SpawnPoint: {fileID: 1179571602}
     m_PlayerNumber: 0
     m_Instance: {fileID: 0}
     m_WayPointList: []
-  - m_PlayerColor: {r: 0, g: 0, b: 0, a: 0}
-    m_SpawnPoint: {fileID: 1179571602}
+  - m_PlayerColor: {r: 1, g: 0, b: 0, a: 0}
+    m_SpawnPoint: {fileID: 1373128693}
     m_PlayerNumber: 0
     m_Instance: {fileID: 0}
     m_WayPointList: []
@@ -288,7 +288,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 545541732}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.8431244, y: 6.2267685, z: 4.327714}
+  m_LocalPosition: {x: 5.8431244, y: 6.2267685, z: 9.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -447,7 +447,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 768370367}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.5, y: 1, z: 4.8}
+  m_LocalPosition: {x: 1.5, y: 1, z: 13.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 711997915}
