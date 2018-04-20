@@ -11,7 +11,6 @@ public class SO_State : ScriptableObject
 	public void UpdateState(StateController controller)
 	{
 		DoActions (controller);
-		Debug.Log(controller);
 		CheckTransitions (controller);
 	}
 
@@ -24,29 +23,19 @@ public class SO_State : ScriptableObject
 
 	}
 	private void CheckTransitions(StateController controller)
-	{
-		
-		for (int i = 0; i < transitions.Length; i++)
-		{
-			bool decisionSucceeded;
-			if (transitions [i].decision.Decide (controller) == null)
-			{
-				decisionSucceeded = false;
-			}
-			else
-			{
-				decisionSucceeded = transitions [i].decision.Decide (controller);	
-			}
-			
-			
-			if (decisionSucceeded)
-			{
-				controller.TransitionToState (transitions [i].trueState);
-			}
-			else
-			{
-				controller.TransitionToState (transitions [i].falseState);
-			}
-		}
-	}
+    	{
+        	for (int i = 0; i < transitions.Length; i++) 
+        	{
+            	bool decisionSucceeded = transitions [i].decision.Decide (controller);
+
+            	if (decisionSucceeded) 
+				{
+                	controller.TransitionToState (transitions [i].trueState);
+            	} 
+				else 
+            	{
+                	controller.TransitionToState (transitions [i].falseState);
+            	}
+        	}
+    	}
 }
