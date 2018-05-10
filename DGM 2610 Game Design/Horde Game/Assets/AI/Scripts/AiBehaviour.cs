@@ -27,6 +27,11 @@ public class AiBehaviour : MonoBehaviour
 		Anims.SetTrigger("Hunt");
 	}
 	
+	private void OnTriggerExit(Collider other)
+	{
+		Anims.SetTrigger("Patrol");
+	}
+	
 	private void OnEnable()
 	{
 		Brain.AiBase = StartAiBase;
